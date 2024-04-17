@@ -27,7 +27,7 @@ def prediction(Buying,Maint,Doors,Persons,Lug_boots,Safety):
   return result
 
 st.title('car evaluation Classification')
-st.image("""https://www.google.com/imgres?imgurl=https%3A%2F%2Fimgd.aeplcdn.com%2F664x374%2Fn%2Fcw%2Fec%2F27074%2Fcivic-exterior-rear-view.jpeg%3Fq%3D80&tbnid=dB-g86tAcTgPlM&vet=12ahUKEwi2v9uH4MiFAxW4tGMGHdq8BdEQMygBegQIARAz..i&imgrefurl=https%3A%2F%2Fwww.carwale.com%2Fhonda-cars%2Fcivic%2F&docid=Nd62i21YXmSxaM&w=664&h=374&q=civic%20honda&ved=2ahUKEwi2v9uH4MiFAxW4tGMGHdq8BdEQMygBegQIARAz""")
+st.image("""""")
 st.header('Enter the Information of the Car:')
 st.text("vigh = 1 high = 2 med = 3 low = 4")
 Buying = st.number_input('buying:',min_value = 1,max_value = 4,value=1)
