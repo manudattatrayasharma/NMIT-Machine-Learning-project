@@ -17,8 +17,7 @@ def predict(Buying, Maint, Doors, Persons, Lug_boot, safety):
   Safety = 2
  elif Safety == 'low':
   Safety = 3
- df = pd.DataFrame([Buying, Maint, Doors, Persons, Lug_boot, safety])
-  columns([Buying, Maint, Doors, Persons, Lug_boot, safety])
+ df = pd.DataFrame([Buying, Maint, Doors, Persons, Lug_boot, safety],columns=[Buying, Maint, Doors, Persons, Lug_boot, safety])
 preduction = model.predict([Buying, Maint, Doors, Persons, Lug_boot, safety])
 return prediction
 st.title('bike Evaluation Classification')
