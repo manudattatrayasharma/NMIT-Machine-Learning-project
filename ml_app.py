@@ -10,7 +10,7 @@ model = DecisionTreeClassifier(criterion='entropy', max_depth=10, min_samples_le
                        random_state=0)
 model = joblib.load('finalized_model.joblib')
 
-def predict(Buying, Maint, Doors, Persons, Lug_boot, safety);
+def predict(Buying, Maint, Doors, Persons, Lug_boot, safety):
  if Safety == 'med':
   Safety = 1
  elif Safety == 'high':
