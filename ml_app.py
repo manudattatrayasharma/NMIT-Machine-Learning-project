@@ -22,7 +22,7 @@ def predict(Buying, Maint, Doors, Persons, Lug_boot, safety);
 preduction = model.predict([Buying, Maint, Doors, Persons, Lug_boot, safety])
 return prediction
 st.title('bike Evaluation Classification')
-st.image(""https://upload.wikimedia.org/wikipedia/commons/0/04/RD-350.jpg"")
+st.image("""https://upload.wikimedia.org/wikipedia/commons/0/04/RD-350.jpg""")
 st.header('Enter information of the bike')
 st.text("vhigh = 1 high = 2 med =3 low = 4")
 Buying = st.number_input('Buying','min_values=1','max_values=4''values=1')
