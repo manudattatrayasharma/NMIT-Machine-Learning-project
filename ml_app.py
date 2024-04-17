@@ -10,7 +10,7 @@ model = DecisionTreeClassifier(criterion='entropy', max_depth=10, min_samples_le
                        random_state=0)
 model = joblib.load('finalized_model.joblib')
 
-def predict(Buying, Maint, Doors, Persons, Lug_boot, safety):
+def prediction(Buying, Maint, Doors, Persons, Lug_boot, safety):
   if Safety == 'med':
     Safety = 1
   elif Safety == 'high':
@@ -19,7 +19,7 @@ def predict(Buying, Maint, Doors, Persons, Lug_boot, safety):
     Safety = 3
   df = pd.DataFrame([Buying, Maint, Doors, Persons, Lug_boot, safety],columns=[Buying, Maint, Doors, Persons, Lug_boot, safety])
   preduction = model.predict([Buying, Maint, Doors, Persons, Lug_boot, safety])
-  return prediction
+  return result
 st.title('bike Evaluation Classification')
 st.image("""https://upload.wikimedia.org/wikipedia/commons/0/04/RD-350.jpg""")
 st.header('Enter information of the bike')
